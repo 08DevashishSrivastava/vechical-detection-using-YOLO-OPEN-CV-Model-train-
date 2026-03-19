@@ -1,27 +1,116 @@
-##  Car🚗 Detection System
+# 🚗 YOLO Object Detection with Graph Visualization
 
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)                 
-[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)   
+This project performs **real-time object detection** using YOLOv8 and visualizes the results using **Matplotlib graphs**.
 
+---
 
-### Sourcerer
-<a href="https://sourcerer.io/spidy20"><img src="https://avatars2.githubusercontent.com/u/42056100?v=4" height="50px" width="50px" alt=""/></a>
+## 📌 Features
 
-### Code Requirements
-- Opencv
-- Car XML(Available in repository)
+* 🎯 Object detection using YOLOv8
+* 🎥 Works on video input (cars.mp4)
+* 📊 Graph visualization of detections per frame
+* 📈 Simple and easy-to-understand implementation
 
+---
 
-### What steps you have to follow??
-- Download my repository 
-- And run `Car_detection.py`
+## 🛠️ Technologies Used
 
-### Video demo
+* Python 🐍
+* OpenCV
+* Ultralytics YOLOv8
+* Matplotlib
 
-[Youtube](https://youtu.be/TiXSnIo5LOo)
+---
 
-## [Follow us on Instagram for Machine Learning Guidelines & Path](https://www.instagram.com/machine_learning_hub.ai/)
-## [Donate me on PayPal(It will inspire me to do more projects)](https://www.paypal.me/spidy1820)
-## Donate me on GPAY:- kushalbhavsar58-1@okaxis
+## 📂 Project Structure
 
-## Just follow☝️ me and Star⭐ my repository 
+```
+├── main.py          # Main detection + graph code
+├── cars.mp4         # Input video file
+├── README.md        # Project documentation
+```
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone the repository
+
+```
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+### 2️⃣ Install dependencies
+
+```
+pip install ultralytics opencv-python matplotlib
+```
+
+---
+
+## ▶️ How to Run
+
+```
+python main.py
+```
+
+---
+
+## 📊 Output
+
+* 🎥 Detects objects frame-by-frame
+* 📈 Displays a graph:
+
+  * X-axis → Frame Number
+  * Y-axis → Number of Objects Detected
+
+---
+
+## 🧠 How It Works
+
+1. Load YOLOv8 model
+2. Read video frame-by-frame
+3. Detect objects in each frame
+4. Count detected objects
+5. Store results in a list
+6. Plot graph using Matplotlib
+
+---
+
+## 📸 Example Use Cases
+
+* Traffic analysis 🚦
+* Vehicle counting 🚗
+* Object tracking research 📊
+
+---
+
+## 🚀 Future Improvements
+
+* Real-time live graph
+* Speed detection of vehicles
+* Web dashboard integration
+* Save graph as image
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork this repo and improve it!
+
+---
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Devashish Srivastava**
+
+---
+
+⭐ If you like this project, don’t forget to star the repository!
