@@ -41,21 +41,11 @@ Haar Cascade Detection → Bounding Box → Display Output
 
 ## 📊 Project Visualizations
 
-### 🔹 Detection Pipeline
+<img width="760" height="768" alt="Image" src="https://github.com/user-attachments/assets/04d4064a-b0a0-40e1-b09e-90fc03eb9ea5" />
+<img width="842" height="534" alt="Image" src="https://github.com/user-attachments/assets/eccf6d19-eb52-4c71-9501-3f0b5f5e9106" />
+<img width="878" height="690" alt="Image" src="https://github.com/user-attachments/assets/87cee405-da93-4a6f-aa28-9e47611b2343" />
 
-![Pipeline](./assets/pipeline.png)
-
-### 🔹 System Architecture
-
-![Architecture](./assets/architecture.png)
-
-### 🔹 Tech Stack Distribution
-
-![Tech Stack](./assets/techstack.png)
-
-### 🔹 Working Flow
-
-![Workflow](./assets/workflow.png)
+<img width="691" height="502" alt="Image" src="https://github.com/user-attachments/assets/e9b5bdd0-a780-4391-9877-72b852f85c85" />
 
 ---
 
