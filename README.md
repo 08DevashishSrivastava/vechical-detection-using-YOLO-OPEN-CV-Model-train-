@@ -1,109 +1,147 @@
-# 🚗 YOLO Object Detection with Graph Visualization
+# 🚗 Car Detection System (OpenCV)
 
-This project performs **real-time object detection** using YOLOv8 and visualizes the results using **Matplotlib graphs**.
-
----
-
-## 📌 Features
-
-* 🎯 Object detection using YOLOv8
-* 🎥 Works on video input (cars.mp4)
-* 📊 Graph visualization of detections per frame
-* 📈 Simple and easy-to-understand implementation
+![Python](https://img.shields.io/badge/Python-3.6+-blue?logo=python)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green)
+![Status](https://img.shields.io/badge/Project-Completed-success)
 
 ---
 
-## 🛠️ Technologies Used
+## 📌 Overview
 
-* Python 🐍
-* OpenCV
-* Ultralytics YOLOv8
-* Matplotlib
+A **real-time Car Detection System** built using **OpenCV and Haar Cascade Classifier** that detects vehicles from video streams and highlights them with bounding boxes.
+
+This project demonstrates core concepts of:
+
+* Computer Vision 👁️
+* Object Detection 🚗
+* Image Processing 🧠
+
+---
+
+## 🎯 Key Features
+
+✅ Real-time car detection
+✅ Lightweight & fast processing
+✅ Works on video input
+✅ Easy to understand implementation
+✅ Uses Haar Cascade (no heavy ML model required)
+
+---
+
+## 🧠 How It Works
+
+The system follows a step-by-step pipeline:
+
+```
+Video Input → Frame Extraction → Grayscale Conversion → 
+Haar Cascade Detection → Bounding Box → Display Output
+```
+
+---
+
+## 📊 Project Visualizations
+
+### 🔹 Detection Pipeline
+
+![Pipeline](./assets/pipeline.png)
+
+### 🔹 System Architecture
+
+![Architecture](./assets/architecture.png)
+
+### 🔹 Tech Stack Distribution
+
+![Tech Stack](./assets/techstack.png)
+
+### 🔹 Working Flow
+
+![Workflow](./assets/workflow.png)
+
+---
+
+## ⚙️ Tech Stack
+
+| Technology      | Purpose          |
+| --------------- | ---------------- |
+| Python 🐍       | Core Programming |
+| OpenCV 👁️      | Image Processing |
+| Haar Cascade 📊 | Object Detection |
 
 ---
 
 ## 📂 Project Structure
 
 ```
-├── main.py          # Main detection + graph code
-├── cars.mp4         # Input video file
-├── README.md        # Project documentation
+Car-Detection-System/
+│
+├── Car_detection.py     # Main detection script
+├── cars.xml             # Haar cascade classifier
+├── assets/              # Images for README (graphs)
+└── README.md
 ```
 
 ---
 
-## ⚙️ Installation
+## 🚀 Installation & Setup
 
-### 1️⃣ Clone the repository
+### 1️⃣ Clone Repository
 
-```
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-```
-
-### 2️⃣ Install dependencies
-
-```
-pip install ultralytics opencv-python matplotlib
+```bash
+git clone https://github.com/your-username/car-detection-system.git
+cd car-detection-system
 ```
 
----
+### 2️⃣ Install Dependencies
 
-## ▶️ How to Run
-
+```bash
+pip install opencv-python
 ```
-python main.py
+
+### 3️⃣ Run the Project
+
+```bash
+python Car_detection.py
 ```
 
 ---
 
-## 📊 Output
+## 🖥️ Output
 
-* 🎥 Detects objects frame-by-frame
-* 📈 Displays a graph:
-
-  * X-axis → Frame Number
-  * Y-axis → Number of Objects Detected
+* Detects cars in video 🎥
+* Draws bounding boxes 📦
+* Labels detected objects as "Car"
 
 ---
 
-## 🧠 How It Works
+## 📌 Code Explanation
 
-1. Load YOLOv8 model
-2. Read video frame-by-frame
-3. Detect objects in each frame
-4. Count detected objects
-5. Store results in a list
-6. Plot graph using Matplotlib
+The system performs:
 
----
-
-## 📸 Example Use Cases
-
-* Traffic analysis 🚦
-* Vehicle counting 🚗
-* Object tracking research 📊
+* Capture video using `cv2.VideoCapture`
+* Convert frames to grayscale
+* Detect cars using `detectMultiScale`
+* Draw rectangles around detected cars
+* Display results in real-time window 
 
 ---
 
-## 🚀 Future Improvements
+## 🔮 Future Improvements
 
-* Real-time live graph
-* Speed detection of vehicles
-* Web dashboard integration
-* Save graph as image
-
----
-
-## 🤝 Contributing
+🚀 Add YOLO (Deep Learning Model)
+🚀 Improve detection accuracy
+🚀 Add vehicle counting system
+🚀 Deploy as web app
 
 Feel free to fork this repo and improve it!
 
 ---
 
-## 📜 License
+## ⭐ Support
 
-This project is open-source and available under the MIT License.
+If you like this project:
+
+👉 Star ⭐ this repository
+👉 Follow for more ML projects
 
 ---
 
@@ -113,4 +151,12 @@ This project is open-source and available under the MIT License.
 
 ---
 
-⭐ If you like this project, don’t forget to star the repository!
+## 💡 Why This Project Matters
+
+This project showcases:
+
+* Practical implementation of Computer Vision
+* Strong fundamentals in OpenCV
+* Clean and understandable logic
+* Real-world application (traffic systems, surveillance)
+
